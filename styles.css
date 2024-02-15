@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin: 5px 15px 5px 5px;
+}
+#brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 35px;
+    
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(38, 38, 38);
+    font-size: larger;
+}
+nav ul li{
+    padding: 5px 15px 5px;
+}
+main{
+    display: flex;
+}
+aside, section{
+    height: 77vh;
+    width: 500px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 40px;
+    border: 15px solid black;
+    padding: 20px;
+}
+section{
+    width: 100%;
+}
+h1{
+    font-size: 50px;
+}
+footer{
+    position: sticky;
+    bottom:0;
+    background-color: rgb(38, 38, 38);
+    height: 15vh;
+    padding: 25px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#seekbar{
+    width:60%;
+}
+#play-button{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
