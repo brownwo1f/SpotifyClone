@@ -9,23 +9,78 @@
 <body>
     <nav>
         <ul >
-            <li id="brand"><img id="logo" src="Spotify_icon.svg.png" alt="Spotify logo" >Spotify</li>
-            <li>Home</li>
-            <li>About</li>
+            <li id="brand"><img class="logo" src="Spotify_icon.svg.png" alt="Spotify logo" >Spotify</li>
+            <li>Music from NCS - No Copyright Sounds</li>
         </ul>
     </nav>
     <main>
         <aside>
-            <h1>Lyrics</h1>
-
+            <img src="https://w0.peakpx.com/wallpaper/480/622/HD-wallpaper-animation-spider-man-into-the-spider-verse-building-jumping-action-movies.jpg" >
+            <h2>A good quote which changes with the song</h2>
         </aside>
         <section>
             <h1>Your Library</h1>
-
+            <div class="yourlib">
+                <ul class="songList">
+                    
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Oh My Gawd</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Never Let You Down</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Bass Face</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Pull me In</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Calling Out Your Name</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Burning Wish</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Keep You</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Memory Box</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>Set You Free</span>
+                        <span>5:20</span>
+                    </li>
+                    <li>
+                        <img class="cover" src="Spotify_icon.svg.png" alt="coverImg">
+                        <span>BUSSIN</span>
+                        <span>5:20</span>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <img src="play-solid.svg" alt="play-button" id="play-button">
+    <footer>  <!--added buttons and seekbar-->
+        <i id="backBtn" class="fa-solid fa-3x fa-backward-step" style="color: #ffffff;"></i>
+        <i class="fa-regular fa-3x fa-circle-play" id="bigPlayBtn"></i>
+        <i id="forwardBtn" class="fa-solid fa-3x fa-forward-step" style="color: #ffffff;"></i>
         <input type="range" min="0" max="100" id="seekbar">
         
     </footer>

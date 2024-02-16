@@ -4,13 +4,15 @@
     box-sizing:border-box;
     color: aliceblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    list-style-type: none;
 }
 body{
     background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
 }
-#logo{
-    width: 50px;
-    height: 50px;
+.logo, .cover{
+    width: 40px;
+    height: 40px;
     margin: 5px 15px 5px 5px;
 }
 #brand{
@@ -23,7 +25,7 @@ body{
 nav ul{
     display:flex;
     align-items: center;
-    list-style-type: none;
+
     background-color: rgb(38, 38, 38);
     font-size: larger;
 }
@@ -34,34 +36,84 @@ main{
     display: flex;
 }
 aside, section{
-    height: 77vh;
-    width: 500px;
+    height: 80vh;
+    width: 700px;
     background-color: rgb(38, 38, 38);
-    border-radius: 40px;
+    border-radius: 45px;
     border: 15px solid black;
-    padding: 20px;
+}
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+aside img{
+    position: relative;
+    border-radius: 30px;
+    height: 76vh;
+    opacity: 0.3;
+}
+aside h2{
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    text-shadow:2px 2px black;
 }
 section{
     width: 100%;
+    padding: 20px;
+}
+.songList li{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.yourlib{
+    max-width: 100%;
+    max-height: 85%;
+    padding: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.yourlib span{
+    padding: 10px;
 }
 h1{
     font-size: 50px;
+    padding: 5px;
 }
 footer{
     position: sticky;
-    bottom:0;
     background-color: rgb(38, 38, 38);
-    height: 15vh;
-    padding: 25px; 
+    bottom: 0;
+    height: 10vh;
+    padding: 45px; 
     display: flex;
     align-items: center;
     justify-content: center; 
 }
 #seekbar{
     width:60%;
+    margin-left: 20px;
+    cursor: pointer;
 }
-#play-button{
-    width: 25px;
-    height: 25px;
-    margin: 10px;
+i{
+    margin: 15px;
+}
+.yourlib::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+.yourlib::-webkit-scrollbar-track {
+    background: rgb(38, 38, 38);        /* color of the tracking area */
+  }
+  
+.yourlib::-webkit-scrollbar-thumb {
+    background-color: aliceblue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid aliceblue;  /* creates padding around scroll thumb */
 }
