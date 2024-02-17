@@ -25,7 +25,6 @@ body{
 nav ul{
     display:flex;
     align-items: center;
-
     background-color: rgb(38, 38, 38);
     font-size: larger;
 }
@@ -71,6 +70,15 @@ section{
     display: flex;
     align-items: center;
     justify-content: left;
+    cursor: pointer;
+    background: rgb(38, 38, 38);
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    padding: 5px;
+    margin:10px;
+}
+.songList li:hover{
+    background: rgb(80, 80, 80);
 }
 .yourlib{
     max-width: 100%;
@@ -117,3 +125,14 @@ i{
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid aliceblue;  /* creates padding around scroll thumb */
 }
+
+@media only screen and (max-width: 1000px) {
+    main {
+      flex-direction: column    ;
+    }
+    aside, section{
+        width: auto;
+    }
+  }
+
+
