@@ -19,14 +19,18 @@ body{
     display: flex;
     align-items: center;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 30px;
     
+}
+header{
+    position: sticky;
+    top: 0;
 }
 nav ul{
     display:flex;
     align-items: center;
     background-color: rgb(38, 38, 38);
-    font-size: larger;
+    font-size: large;
 }
 nav ul li{
     padding: 5px 15px 5px;
@@ -51,7 +55,7 @@ aside{
 }
 aside img{
     position: relative;
-    border-radius: 30px;
+    border-radius: 45px;
     height: 76vh;
     opacity: 0.3;
 }
@@ -126,12 +130,29 @@ i{
     border: 3px solid aliceblue;  /* creates padding around scroll thumb */
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgb(38, 38, 38);        /* color of the tracking area */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: aliceblue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid aliceblue;  /* creates padding around scroll thumb */
+}
+
 @media only screen and (max-width: 1000px) {
     main {
       flex-direction: column    ;
     }
     aside, section{
         width: auto;
+    }
+    body{
+        overflow-y: scroll;
     }
   }
 
